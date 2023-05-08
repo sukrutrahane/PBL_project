@@ -1,5 +1,5 @@
 from fastapi import Request, FastAPI
-
+# from sklearn import *
 import pickle
 import numpy as np
 import pandas as pd
@@ -7,7 +7,8 @@ import math
 import copy
 import joblib
 
-model = joblib.load('../../data/model/stackingmodel.pkl')
+# model = joblib.load('../../data/model/stackingmodel.pkl')
+model = joblib.load("C:\Users\ADMIN\Documents\GitHub\PBL_project\data\model\stackingmodel.pkl")
 
 def cleaning(star_data):
     if star_data['Age'] == "None":
